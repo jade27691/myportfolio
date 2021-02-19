@@ -1,0 +1,383 @@
+
+body {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* NAVIGATION SECTION */
+
+.header-container {
+    background-color:white;
+    position: fixed;
+    width:100%;
+}
+
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mynavbutton {
+    color: black;
+    border: 1px solid white;
+    padding: 10px 20px;
+    padding: 10px 25px;
+    background-color:#CEE1C4;
+}
+
+.mynavbutton:hover {
+    background-color:#ed7966;
+ }
+
+.main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.header1 {
+    min-height: 400px;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: linear-gradient(rgba(25, 25, 29, 0.8), rgba(59, 57, 57, 0.493)), url("Images/domenico-loia-hGV2TfOh0ns-unsplash.jpg"); /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header-text {
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 30px;
+}
+
+.mybutton {
+    background-color:#ed7966;
+    padding: 11px 25px;
+    border-radius: 5px;
+}
+
+a.mybutton:hover{
+    background-color:#aca7c2;
+    transition-duration: 1s;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutme-section {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    background-color: #CEE1C4;
+    padding: 30px 150px;
+}
+
+.aboutme1 {
+    flex: 2;
+    padding-right: 100px;
+}
+
+.aboutme1 p {
+    padding-top: 20px;
+    line-height: 1.2rem;
+}
+
+.aboutme2 {
+    flex: 1;
+}
+
+.aboutme2 img {
+    border-radius: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: #aca7c2;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfoliosection {
+    background-color: #f8f7f6;   
+}
+
+.portfoliosection h2 {
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.portfolioboxes {
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolioboxes a {
+    color: black;
+    text-decoration: underline;
+}
+
+.col {
+    width: 30%;
+    margin: 20px 10px 10px 20px;  
+    background-color: white;
+    box-shadow: 2px 2px 20px 2px #aaaaaa;
+}
+
+.col p {
+    color: black;
+    font-size: 0.875;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+
+/* .col p::first-line {
+    font-weight: bold;
+} */
+
+/* SKILLS SECTION */
+
+.skillsect {
+    background-color: #ed7966;
+    margin-top: 20px;
+}
+
+.skillsect h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 50px;
+}
+
+.otherskills {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 10px;
+}
+
+.skilld {
+    text-align: center;
+}
+
+.otherskills p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    color: white;
+}
+
+i {
+    color: white;   
+    font-size: 4rem;
+    text-align: center
+}
+
+/* FOOTER SECTION */
+
+footer {
+    max-width: 100%;
+    background-color: #494752;
+    padding: 20px 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.socialicons {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.socials {
+    font-size: 2rem;
+}
+
+.fa-linkedin:hover, .fa-instagram-square:hover  {
+    color: #ed7966;
+}
+
+/* MOBILE MENU */
+
+.mob-wrapper {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    .herocontent {
+        margin-top: 0px;
+    }
+    
+    .herosection {
+        display: inline-block;
+        max-height: 700px;
+    }
+
+    .heroimg {
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .hero-header-text {
+        padding: 30px 50px;
+    }
+
+    .hero-header-text h1 {
+    padding-bottom: 20px;
+    }
+
+    .hero-header-text p {
+        line-height: 1.5rem;
+        padding-bottom: 20px;
+    }
+
+    .col {
+        width: 45%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mob-nav {
+        display: none;
+        position: absolute;
+    }
+
+    .mynavbutton {
+        display: block;
+        margin-left: -90px;
+    }
+
+    .aboutme-section {
+        padding: 0;
+        padding-left: 120px;
+        padding-top: 30px;
+        text-align: center;
+        display: block;
+    }
+
+    .aboutme2 {
+        padding: 30px 150px;
+    }
+
+    .aboutme2 img {
+        display: block;
+        text-align: center;
+    }
+
+    .mob-wrapper {
+        display: block;
+        padding-right: 50px;
+    }
+    
+}
+
+/* Mobile View */
+
+@media (max-width: 430px) {
+
+    .logo {
+        margin-left: 20px;
+    }
+    
+    .col {
+        width: 100%;
+    }
+
+    .mybutton {
+        padding: 10px 5px;
+        border-radius: 5px;
+    }
+
+    .herocontent {
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .herocontent h2 {
+        font-size: 1.5rem;
+    }
+
+    .herocontent p {
+        font-size: 0.871;
+    }
+
+    .heroimg {
+        display: none;
+    }
+
+    .aboutme-section {
+        padding-left: 0px;
+    }
+
+    .aboutme1 {
+        padding-right: 0px;
+    }
+
+    .aboutme1 p {
+        padding-top: 20px;
+        font-size: 1rem;
+    }
+
+    .aboutme2 img {
+        display: none;
+        text-align: center;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    .skillsect h2 {
+        font-size: 1.3rem;
+        padding-top: 20px;
+    }
+    
+    .otherskills {
+        padding: 20px 30px;
+    }
+
+    .skillsect p {
+        font-size: 0.875rem;
+    }
+}

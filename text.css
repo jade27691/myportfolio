@@ -1,0 +1,88 @@
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 300px;
+    width: 100%;
+    background: black;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: linear-gradient(rgba(8, 19, 122, 0.8), rgba(184, 99, 117, 0.8)), url("Images/xps-Gi3iUJ1FwxI-unsplash.jpg"); /* The least supported option. */
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-header-text {
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+main {
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.aboutme1 {
+    flex: 2;
+    padding-right: 40px;
+    padding-left: 30px;
+}
+
+.aboutme2 {
+    flex: 1;
+    padding-right: 30px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+p {
+    line-height: 1.75rem;
+}
+
+.cards {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards p {
+    font-size: 0.825rem;
+}
+
+.cards1 {
+    background-color: coral;
+    min-height: 300px;
+    width: 30%;
+}
+
+.cards2 {
+    background-color:rgb(30, 30, 224);
+    min-height: 300px;
+    width: 30%;
+}
+
+.cards3 {
+    background-color:rgb(170, 0, 255);
+    min-height: 300px;
+    width: 30%;
+}
